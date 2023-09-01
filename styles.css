@@ -1,12 +1,20 @@
+/* Paleta de colores */
+:root {
+    --color-primary: #FFA500; /* Naranja */
+    --color-secondary: #333; /* Gris oscuro */
+    --color-background: #f2f2f2; /* Gris claro */
+}
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--color-background);
 }
 
 header {
-    background-color: #333;
+    background-color: var(--color-primary);
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -29,27 +37,66 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--color-secondary);
 }
 
 main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
     font-size: 24px;
-    color: #333;
+    color: var(--color-secondary);
     margin-bottom: 10px;
 }
 
+/* Estilos para la sección Acerca de mí */
+#acerca-de-mi {
+    background-color: var(--color-background); /* Puedes ajustar el color de fondo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#acerca-de-mi h2 {
+    color: var(--color-primary); /* Color naranja */
+}
+
+/* Estilos para los puntos destacados */
+.destacado {
+    background-color: #fff; /* Fondo blanco */
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.destacado h3 {
+    color: var(--color-primary); /* Color naranja */
+}
+
+/* Estilos para los párrafos */
+.destacado p {
+    color: var(--color-secondary); /* Color gris oscuro */
+}
+
+/* Estilos para el párrafo final */
+#acerca-de-mi p:last-child {
+    font-weight: bold;
+}
+
+
 /* Estilos de la barra lateral */
 aside {
-    background-color: #f2f2f2;
+    background-color: var(--color-background);
     padding: 20px;
     width: 30%;
     float: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para dispositivos móviles */
@@ -62,3 +109,4 @@ aside {
         float: none;
     }
 }
+
