@@ -89,3 +89,23 @@ nav ul li a:hover {
     border-radius: 50%; /* Esto hace que la imagen tenga bordes redondeados */
     object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
 }
+
+/* En tu archivo styles.css */
+#redes-sociales {
+    text-align: center;
+}
+
+#redes-sociales a {
+    display: inline-block;
+    margin: 10px; /* Espaciado entre los iconos */
+    transition: transform 0.3s ease;
+}
+
+#redes-sociales a img {
+    width: 32px; /* Ancho deseado para los iconos */
+    height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+}
+
+#redes-sociales a:hover {
+    transform: scale(1.2);
+}
